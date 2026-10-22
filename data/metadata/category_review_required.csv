@@ -1,0 +1,2 @@
+category,source,filename,item_id,design_id,local_path,gridfs_file_id,gridfs_bucket,sha256,width,height,format,duplicate_count,status
+,gridfs,1000463981.jpg,1000463981,,,6ac1ca3fd10d6e26c647491a,fs,79c49c5d104461fb741755793bc3e523efb51028c8f5e6195fea6d79519a4d95,1599,710,JPEG,1,needs_category

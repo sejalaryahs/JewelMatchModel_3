@@ -1,0 +1,28 @@
+﻿.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+
+# Raw and processed datasets
+data/raw/*
+data/processed/*
+data/splits/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/splits/.gitkeep
+
+# Model files and checkpoints
+models/checkpoints/*
+models/exports/*
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# Logs and generated outputs
+logs/*
+*.log
+outputs/

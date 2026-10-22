@@ -1,0 +1,35 @@
+﻿project:
+  name: jewellery-model-3
+  version: 0.1.0
+  random_seed: 42
+
+data:
+  raw_gold_dir: data/raw/gold
+  raw_prototype_dir: data/raw/prototype
+  processed_dir: data/processed
+  splits_dir: data/splits
+  allowed_extensions:
+    - .jpg
+    - .jpeg
+    - .png
+    - .webp
+
+image:
+  input_size: 224
+  preserve_aspect_ratio: true
+
+training:
+  device: cpu
+  batch_size: 4
+  num_workers: 0
+  checkpoint_every_epochs: 1
+  resume_enabled: true
+
+inference:
+  provider: CPUExecutionProvider
+  top_k: 5
+  max_upload_mb: 10
+
+api:
+  host: 0.0.0.0
+  port: 8000

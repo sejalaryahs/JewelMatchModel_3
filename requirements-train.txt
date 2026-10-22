@@ -1,0 +1,12 @@
+﻿# Model 3 - Training dependencies
+torch==2.14.1
+torchvision==0.29.1
+numpy==2.5.4
+transformers==5.20.2
+Pillow==13.0.0
+opencv-python-headless==5.0.0.93
+scikit-learn==1.9.1
+tqdm==4.70.1
+PyYAML==6.0.3
+safetensors==0.8.0
+pytest==9.1.1
