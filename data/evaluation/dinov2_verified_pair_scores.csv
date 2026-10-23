@@ -1,0 +1,28 @@
+﻿gold_filename,prototype_filename,label,match_type,cosine_similarity,rank
+029717c4-410b-42d1-8754-a8e1c7eca24a.jpg,prototype/LP/1000171711.jpg,1,same_design,0.163869,200
+2c5d9428-37c9-4513-a92e-ae99ae084b98.jpg,prototype/LP/1000171713.jpg,1,same_design,0.373904,118
+e52c057d-5567-4ded-9a10-2115dfa2bfac.jpg,prototype/LP/1000171712.jpg,1,same_design,0.487778,1
+f09bb4c0-64aa-483a-82de-836415088bd5.jpg,prototype/LP/9058.jpg,1,same_design,0.411872,4
+f7873ad8-1426-434a-8144-ba647f289e32.jpg,prototype/LP/1000171711.jpg,1,same_design,0.204745,198
+gold ring.jpg,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.40_1.jpeg,1,same_design,0.238396,83
+WhatsApp Image 2026-09-11 at 17.04.38 (1) 334.jpeg,prototype/FOTO/WhatsApp_Image_2026-09-11_at_17.04.48.jpeg,1,same_design,0.277045,165
+WhatsApp Image 2026-09-11 at 17.04.38 (1).jpeg,prototype/FOTO/WhatsApp_Image_2026-09-11_at_17.04.48.jpeg,1,same_design,0.247485,178
+WhatsApp Image 2026-09-11 at 17.04.38.jpeg,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.40_2.jpeg,1,same_design,0.414012,46
+WhatsApp Image 2026-09-11 at 17.04.39.jpeg,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.40.jpeg,1,same_design,0.462384,16
+WhatsApp Image 2026-09-11 at 17.04.42.jpeg,prototype/LAD/WhatsApp_Image_2026-09-11_at_17.04.51.jpeg,1,same_design,0.246426,87
+WhatsApp Image 2026-09-11 at 17.04.43 (1).jpeg,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.46.jpeg,1,same_design,0.185864,168
+WhatsApp Image 2026-09-11 at 17.04.43 (2).jpeg,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.44.jpeg,1,same_design,0.547203,3
+WhatsApp Image 2026-09-11 at 17.04.43.jpeg,prototype/KACHUWA TORTOISE/WhatsApp_Image_2026-09-11_at_17.04.45.jpeg,1,same_design,0.187945,157
+WhatsApp Image 2026-09-11 at 17.04.44.jpeg,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.51_2.jpeg,1,same_design,0.426253,99
+WhatsApp Image 2026-09-11 at 17.04.46.jpeg,prototype/GF/WhatsApp_Image_2026-09-11_at_17.04.46_1.jpeg,1,same_design,0.196120,198
+WhatsApp Image 2026-09-11 at 17.04.49.jpeg,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.53.jpeg,1,same_design,0.162327,142
+WhatsApp Image 2026-09-11 at 17.04.50 (1).jpeg,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.47.jpeg,1,same_design,0.491837,1
+WhatsApp Image 2026-09-11 at 17.04.50.jpeg,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.51_1.jpeg,1,same_design,0.234180,109
+WhatsApp Image 2026-09-11 at 17.04.53.jpeg,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.56_1.jpeg,1,same_design,0.384377,95
+WhatsApp Image 2026-09-11 at 17.04.54.jpeg,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.56.jpeg,1,same_design,0.312474,67
+WhatsApp Image 2026-09-11 at 17.04.57.jpeg,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.48_1.jpeg,1,same_design,0.096896,211
+WhatsApp Image 2026-09-11 at 17.04.57.png,prototype/LP/WhatsApp_Image_2026-09-11_at_17.04.48_1.jpeg,1,same_design,0.199088,194
+4ff4c436-17fb-4855-aeb2-f6aa86fb8084.jpg,prototype/LP/1000171714.jpg,1,same_design,0.456762,1
+c4a22a94-2c0c-4ead-b7be-59098d63935c.jpg,prototype/LP/1000171715.jpg,1,same_design,0.322484,2
+d53c7bc3-baaa-47ec-9277-e1a38dbe9868.jpg,prototype/LP/909.jpg,1,same_design,0.194730,65
+d53c7bc3-baaa-47ec-9277-e1a38dbe986811.jpg,prototype/LP/909.jpg,1,same_design,0.354721,67

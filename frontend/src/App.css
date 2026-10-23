@@ -1,0 +1,390 @@
+/* Jewellery Model 3 — DINOv2 search additions */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.api-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: #6b705f;
+}
+
+.api-status .status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d19a43;
+}
+
+.api-status.online .status-dot {
+  background: #32945c;
+}
+
+.api-status.offline .status-dot {
+  background: #c84b43;
+}
+
+.search-layout {
+  align-items: start;
+}
+
+.upload-dropzone {
+  min-height: 300px;
+  border: 1px dashed #c9b994;
+  border-radius: 10px;
+  background: #fcfaf6;
+  overflow: hidden;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.upload-dropzone.dragging {
+  border-color: #a7813f;
+  background: #f5eedf;
+}
+
+.upload-dropzone.has-image {
+  padding: 10px;
+}
+
+.upload-placeholder {
+  min-height: 275px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.upload-icon,
+.empty-results-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 14px;
+  border: 1px solid #dfcfad;
+  border-radius: 50%;
+  color: #a7813f;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+}
+
+.upload-placeholder h3,
+.empty-results h3 {
+  margin: 5px 0 8px;
+  font-size: 15px;
+}
+
+.upload-placeholder p,
+.empty-results p {
+  max-width: 280px;
+  color: #847c6e;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.file-picker {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.file-picker input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.change-image {
+  margin-top: 8px;
+}
+
+.find-matches-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.find-matches-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.loading-message,
+.privacy-note {
+  line-height: 1.7;
+}
+
+.privacy-note {
+  margin-top: 15px;
+}
+
+.empty-results {
+  min-height: 300px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px dashed #e0d6c4;
+  border-radius: 10px;
+  background: #fcfaf6;
+}
+
+.empty-results-icon {
+  font-size: 30px;
+}
+
+.result-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.result-card {
+  position: relative;
+  min-width: 0;
+  text-align: left;
+  overflow: hidden;
+}
+
+.result-card:hover {
+  border-color: #c7ad7b;
+}
+
+.result-card .prototype-image-wrap {
+  position: relative;
+  height: 180px;
+  background: #f5f1e8;
+}
+
+.result-card .prototype-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px;
+}
+
+.result-rank {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  background: #fffdf5;
+  color: #92703b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.result-card .prototype-name {
+  display: block;
+  padding: 12px 12px 5px;
+  overflow-wrap: anywhere;
+  font-weight: 600;
+}
+
+.result-card > .muted {
+  display: block;
+  padding: 3px 12px;
+  overflow-wrap: anywhere;
+}
+
+.similarity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 12px 0;
+  color: #777060;
+  font-size: 11px;
+}
+
+.similarity-row strong {
+  color: #8b692e;
+  font-size: 13px;
+}
+
+.similarity-track {
+  height: 5px;
+  margin: 8px 12px 0;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #eee7d9;
+}
+
+.similarity-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #b39457;
+}
+
+.view-result {
+  display: block;
+  margin: 12px 12px 14px;
+  padding-top: 10px;
+  border-top: 1px solid #eee7d9;
+  color: #8e6b33;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.image-unavailable {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: #817866;
+  font-size: 12px;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 35px;
+  padding: 20px 0;
+  border-top: 1px solid #e8e0d2;
+  color: #89806f;
+  font-size: 11px;
+}
+
+.result-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  background: rgb(29 24 17 / 65%);
+}
+
+.result-modal {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  width: min(760px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #e7decd;
+  border-radius: 12px;
+  background: #fffdf8;
+  box-shadow: 0 20px 70px rgb(0 0 0 / 20%);
+}
+
+.overlay-image-wrap {
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+  background: #f4f0e7;
+}
+
+.overlay-image-wrap img {
+  display: block;
+  width: 100%;
+  max-height: 470px;
+  padding: 20px;
+  object-fit: contain;
+}
+
+.overlay-details {
+  padding: 32px 25px;
+}
+
+.overlay-details h2 {
+  margin-bottom: 8px;
+  overflow-wrap: anywhere;
+}
+
+.overlay-close {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: #fffdf0;
+  color: #514631;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.detail-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 13px 0;
+  border-bottom: 1px solid #ece4d6;
+  font-size: 12px;
+}
+
+.detail-row span {
+  color: #837968;
+}
+
+.detail-row strong {
+  overflow-wrap: anywhere;
+}
+
+.close-details {
+  margin-top: 20px;
+}
+
+@media (max-width: 850px) {
+  .result-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .header-actions {
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-card .prototype-image-wrap {
+    height: 230px;
+  }
+
+  .result-modal {
+    grid-template-columns: 1fr;
+  }
+
+  .overlay-image-wrap {
+    min-height: 220px;
+  }
+
+  .overlay-image-wrap img {
+    max-height: 280px;
+  }
+
+  .overlay-details {
+    padding: 24px 20px;
+  }
+
+  .page-footer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,11 @@
+
+Flask
+flask-cors
+gunicorn
+pymongo
+dnspython
+Pillow
+numpy
+python-dotenv
+transformers
+torch
